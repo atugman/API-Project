@@ -1,0 +1,120 @@
+.all-buttons {
+    text-align: center;
+}
+
+button {
+  padding: 8px;
+  padding-right: 23px;
+  font-size: 1.8em;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border: solid 1px #777;
+  text-indent: 18px;
+  background-color: #fff;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    position: relative;
+    margin-left: 435px;
+    width: 25%;
+    padding: 0 18px;
+    margin-top: 10px;
+    padding-right: 33px;
+    background-color: white;
+    display: none;
+    opacity: .8;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 100;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+li {
+    opacity: 1;
+}
+
+body {
+    background-image: url("https://static1.squarespace.com/static/52ddfde3e4b0c593abb98f50/t/52df7561e4b0bd4ef9c6ccd8/1425055220355/beer+sampler.2.jpg?format=2500w");
+
+}
+
+.sierra-nevada {
+}
+
+/*backgrounds for each beer on click*/
+
+.bg{
+    background-image: url("https://static1.squarespace.com/static/52ddfde3e4b0c593abb98f50/t/52df7561e4b0bd4ef9c6ccd8/1425055220355/beer+sampler.2.jpg?format=2500w");
+}
+
+.sn-bg {
+    background-image: url("http://img.mota.ru/upload/wallpapers/source/2009/07/16/09/05/11822/mountains_218.jpg")
+}
+
+.ab-bg {
+    background-image: url("http://cdn.wallpapersafari.com/62/46/1xCveZ.jpg");
+}
+
+.hl-bg {
+    background-image: url("https://static1.squarespace.com/static/56321f2ae4b056a7ef9f1d9f/56363aa7e4b0683b6c524d64/56f42e7f2eeb819927f6a1b4/1459012306846/Highland-Media-Wall.jpg?format=1500w");
+}
+
+.c-bg {
+    background-image: url("http://www.thewallpapers.org/photo/60250/Coors_Banquet_WallpaperA_1600.jpg");
+}
+
+.m-bg {
+    background-image: url("http://www.adweek.com/agencyspy/wp-content/uploads/sites/7/2016/02/miller-lite-can-2.jpg");
+}
+
+/*backgrounds for buttons*/
+
+.active.accordion-sn {
+    background-color: green;
+}
+
+.active.accordion-ab {
+    background-color: red;
+}
+
+.active.accordion-hl {
+    background-color: brown;
+}
+
+.active.accordion-c {
+    background-color: grey;
+}
+
+.active.accordion-m {
+    background-color: gold;
+}
+
+footer {
+    position: fixed; 
+    top: 10px;
+    right: 15px;
+    font-size: 15px;
+    font-color: white;
+}
+

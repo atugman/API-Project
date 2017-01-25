@@ -1,7 +1,7 @@
 //Initial call
 $(document).ready(function(){
 
-  $.getJSON(`http://api.brewerydb.com/v2/&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
+  $.getJSON(`https://api.brewerydb.com/v2/&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
     displayData(response.data);
 }
 );
@@ -131,7 +131,7 @@ $('.accordion-m').click(function() {
 
 $(".accordion-sn").click(function() {
 
- $.getJSON(`http://api.brewerydb.com/v2/search?q=sierra_nevada&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
+ $.getJSON(`https://api.brewerydb.com/v2/search?q=sierra_nevada&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
     displayData(response.data);
   });
 
@@ -149,7 +149,7 @@ function displayData(data) {
 
  $(".accordion-ab").click(function() {
 
- $.getJSON(`http://api.brewerydb.com/v2/search?q=anheuser-busch&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
+ $.getJSON(`https://api.brewerydb.com/v2/search?q=anheuser-busch&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
     displayData(response.data);
   });
 
@@ -166,7 +166,7 @@ function displayData(data) {
 
  $(".accordion-hl").click(function() {
 
- $.getJSON(`http://api.brewerydb.com/v2/search?q=highland&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
+ $.getJSON(`https://api.brewerydb.com/v2/search?q=highland&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
     displayData(response.data);
   });
 
@@ -183,7 +183,7 @@ function displayData(data) {
 
  $(".accordion-c").click(function() {
 
- $.getJSON(`http://api.brewerydb.com/v2/search?q=coors&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
+ $.getJSON(`https://api.brewerydb.com/v2/search?q=coors&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
     displayData(response.data);
   });
 
@@ -201,7 +201,7 @@ function displayData(data) {
 
  $(".accordion-m").click(function() {
 
- $.getJSON(`http://api.brewerydb.com/v2/search?q=miller&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
+ $.getJSON(`https://api.brewerydb.com/v2/search?q=miller&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
     displayData(response.data);
   });
 
@@ -213,3 +213,21 @@ function displayData(data) {
     }
   }
 });
+
+// individual beer data
+/*
+$(".sierra-nevada").on("click", function() {
+  $.getJSON("http://api.brewerydb.com/v2/search?q=sierra_nevada&type=beer&key=09bfd52cedee078843cbf5e41584a046", function(json) {
+        var html = "";
+        json.forEach(function(val) {
+        var keys = Object.keys(val);
+        html += "<div class = 'sn.list'>";
+        keys.forEach(function(key) {
+        html += "<strong>" + key + "</strong>: " + val[key] + "<br>";
+        });
+        html += "</div></br>";
+      });
+    $(".sn-list").html(html);
+  });
+});
+*/

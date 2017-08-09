@@ -10,7 +10,6 @@ function displayData(data) {
     for(var i=0; i<data.length; i++) {
       var html = '<li>' + data[i].name + '</li>';
       $('.sierra-nevada').append(html);
-      console.log(data);
     }
   }
 });
@@ -109,22 +108,43 @@ for (i = 0; i < acc.length; i++) {
 //toggle backgrounds based on beer
 $('.accordion-sn').click(function() {
      $('body').toggleClass('bg sn-bg');
+     $('.accordion-ab').toggle();
+     $('.accordion-hl').toggle();
+     $('.accordion-c').toggle();
+     $('.accordion-m').toggle();
 });
 
 $('.accordion-ab').click(function() {
      $('body').toggleClass('bg ab-bg');
+     $('.accordion-sn').toggle();
+     $('.accordion-hl').toggle();
+     $('.accordion-c').toggle();
+     $('.accordion-m').toggle();
 });
 
 $('.accordion-hl').click(function() {
      $('body').toggleClass('bg hl-bg');
+     $('.accordion-sn').toggle();
+     $('.accordion-ab').toggle();
+     $('.accordion-c').toggle();
+     $('.accordion-m').toggle();
+
 });
 
 $('.accordion-c').click(function() {
      $('body').toggleClass('bg c-bg');
+     $('.accordion-sn').toggle();
+     $('.accordion-ab').toggle();
+     $('.accordion-hl').toggle();
+     $('.accordion-m').toggle();
 });
 
 $('.accordion-m').click(function() {
      $('body').toggleClass('bg m-bg');
+     $('.accordion-sn').toggle();
+     $('.accordion-ab').toggle();
+     $('.accordion-hl').toggle();
+     $('.accordion-c').toggle();
 });
 
 //Sierra data from BreweryDB API
@@ -139,7 +159,6 @@ function displayData(data) {
     for(var i=0; i<data.length; i++) {
       var html = '<li>' + data[i].name + '</li>';
       $('.sierra-nevada').append(html);
-      console.log(data);
     }
   }
 });
@@ -157,7 +176,6 @@ function displayData(data) {
     for(var i=0; i<data.length; i++) {
       var html = '<li>' + data[i].name + '</li>';
       $('.busch').append(html);
-      console.log(data);
     }
   }
 });
@@ -174,7 +192,6 @@ function displayData(data) {
     for(var i=0; i<data.length; i++) {
       var html = '<li>' + data[i].name + '</li>';
       $('.highland').append(html);
-      console.log(data);
     }
   }
 });
@@ -191,7 +208,6 @@ function displayData(data) {
     for(var i=0; i<data.length; i++) {
       var html = '<li>' + data[i].name + '</li>';
       $('.coors').append(html);
-      console.log(data);
     }
   }
 });
@@ -209,7 +225,6 @@ function displayData(data) {
     for(var i=0; i<data.length; i++) {
       var html = '<li>' + data[i].name + '</li>';
       $('.miller').append(html);
-      console.log(data);
     }
   }
 });

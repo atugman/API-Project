@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+.accordion-sn, .accordion-m, .accordion-ab, .accordion-hl, .accordion-c {
+  cursor: pointer;
+}
+
 button {
   padding: 8px;
   padding-right: 23px;
@@ -31,13 +35,12 @@ button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
 
-div.panel { /*beer text*/
-    position: relative;
-    margin-left: 435px;
+div.panel {
     width: 25%;
-    padding: 0 18px;
-    margin-top: 10px;
-    padding-right: 33px;
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: auto;
     background-color: white;
     display: none;
     opacity: .8;
@@ -54,12 +57,17 @@ div:.panel:hover {
     background-color: : blue;
 }
 
+ul {
+  width: 75%;
+  text-align: center;
+}
+
 ul, li{
     list-style-type: none;
 }
 
 li {
-    opacity: 1;
+  display: inline-block;
 }
 
 body {
@@ -74,15 +82,15 @@ body {
 }
 
 .sn-bg {
-    background-image: url("http://img.mota.ru/upload/wallpapers/source/2009/07/16/09/05/11822/mountains_218.jpg");
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg");
 }
 
 .ab-bg {
-    background-image: url("http://cdn.wallpapersafari.com/62/46/1xCveZ.jpg");
+    background-image: url("http://wallpapersdsc.net/wp-content/uploads/2016/09/Budweiser-Images.jpg");
 }
 
 .hl-bg {
-    background-image: url("https://static1.squarespace.com/static/56321f2ae4b056a7ef9f1d9f/56363aa7e4b0683b6c524d64/56f42e7f2eeb819927f6a1b4/1459012306846/Highland-Media-Wall.jpg?format=1500w");
+    background-image: url("https://www.picclickimg.com/00/s/MTQwN1gxMTgx/z/eikAAOSwal5YEV1d/$/Highland-Brewing-Co-Thunderstruck-Beer-Tap-Handle-_57.jpg");
 }
 
 .c-bg {
@@ -116,7 +124,7 @@ body {
 }
 
 footer {
-    position: fixed; 
+    position: fixed;
     top: 10px;
     right: 15px;
     font-size: 12px;
@@ -128,3 +136,32 @@ footer {
     padding: 3px;
 }
 
+@media only screen and (max-width: 640px) {
+  .panel {
+    width: 25%;
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: auto;
+  }
+
+  ul {
+    width: 75%;
+    text-align: center;
+  }
+
+  li {
+    /*display: inline-block;*/
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .panel {
+    width: 25%;
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: auto;
+  }
+}

@@ -1,18 +1,19 @@
-//Initial call
-$(document).ready(function(){
-
-  $.getJSON(`https://api.brewerydb.com/v2/&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
-    displayData(response.data);
-}
-);
-
-function displayData(data) {
-    for(var i=0; i<data.length; i++) {
-      var html = '<li>' + data[i].name + '</li>';
-      $('.sierra-nevada').append(html);
-    }
-  }
+$(document).ready(function() {
+  $('.accordion-sn').hide();
+  $('.accordion-ab').hide();
+  $('.accordion-hl').hide();
+  $('.accordion-c').hide();
+  $('.accordion-m').hide();
 });
+
+$('.got-it').click(function() {
+  $('.intro').hide();
+  $('.accordion-sn').show();
+  $('.accordion-ab').show();
+  $('.accordion-hl').show();
+  $('.accordion-c').show();
+  $('.accordion-m').show();
+})
 
 //sierra nevada accordion functionality
 

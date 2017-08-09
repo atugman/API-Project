@@ -6,6 +6,26 @@
   cursor: pointer;
 }
 
+.intro {
+  width: 50%;
+  margin: auto;
+  margin-top: 5%;
+  padding: 1%;
+  background-color: white;
+  opacity: .8;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 18px;
+  text-shadow: 4px 4px 4px #aaa;
+  font-family: Roboto;
+}
+
+.got-it {
+  cursor: pointer;
+}
+
 button {
   padding: 8px;
   padding-right: 23px;

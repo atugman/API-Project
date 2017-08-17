@@ -107,6 +107,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 //toggle backgrounds based on beer
+
 $('.accordion-sn').click(function() {
      $('body').toggleClass('bg sn-bg');
      $('.accordion-ab').toggle();
@@ -229,21 +230,3 @@ function displayData(data) {
     }
   }
 });
-
-// individual beer data
-/*
-$(".sierra-nevada").on("click", function() {
-  $.getJSON("http://api.brewerydb.com/v2/search?q=sierra_nevada&type=beer&key=09bfd52cedee078843cbf5e41584a046", function(json) {
-        var html = "";
-        json.forEach(function(val) {
-        var keys = Object.keys(val);
-        html += "<div class = 'sn.list'>";
-        keys.forEach(function(key) {
-        html += "<strong>" + key + "</strong>: " + val[key] + "<br>";
-        });
-        html += "</div></br>";
-      });
-    $(".sn-list").html(html);
-  });
-});
-*/

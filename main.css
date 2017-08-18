@@ -73,10 +73,6 @@ div.panel {
     font-family: Roboto;
 }
 
-div:.panel:hover {
-    background-color: : blue;
-}
-
 ul {
   width: 75%;
   text-align: center;
@@ -91,37 +87,52 @@ li {
 }
 
 body {
-    background-image: url("https://static1.squarespace.com/static/52ddfde3e4b0c593abb98f50/t/52df7561e4b0bd4ef9c6ccd8/1425055220355/beer+sampler.2.jpg?format=2500w");
-
-}
-
-/*backgrounds for each beer on click*/
-
-.bg{
-    background-image: url("https://static1.squarespace.com/static/52ddfde3e4b0c593abb98f50/t/52df7561e4b0bd4ef9c6ccd8/1425055220355/beer+sampler.2.jpg?format=2500w");
+    background: url("https://static1.squarespace.com/static/52ddfde3e4b0c593abb98f50/t/52df7561e4b0bd4ef9c6ccd8/1425055220355/beer+sampler.2.jpg?format=2500w") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .sn-bg {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg");
+    background: url("https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .ab-bg {
-    background-image: url("http://wallpapersdsc.net/wp-content/uploads/2016/09/Budweiser-Images.jpg");
+    background: url("./img/budweiser.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .hl-bg {
-    background-image: url("https://www.picclickimg.com/00/s/MTQwN1gxMTgx/z/eikAAOSwal5YEV1d/$/Highland-Brewing-Co-Thunderstruck-Beer-Tap-Handle-_57.jpg");
+    background: url("https://www.picclickimg.com/00/s/MTQwN1gxMTgx/z/eikAAOSwal5YEV1d/$/Highland-Brewing-Co-Thunderstruck-Beer-Tap-Handle-_57.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .c-bg {
-    background-image: url("http://www.thewallpapers.org/photo/60250/Coors_Banquet_WallpaperA_1600.jpg");
+    background: url("./img/coors.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .m-bg {
-    background-image: url("http://www.adweek.com/agencyspy/wp-content/uploads/sites/7/2016/02/miller-lite-can-2.jpg");
+    background: url("http://www.adweek.com/agencyspy/wp-content/uploads/sites/7/2016/02/miller-lite-can-2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
-/*backgrounds for buttons*/
 
 .active.accordion-sn {
     background-color: green;
@@ -171,7 +182,6 @@ footer {
   }
 
   li {
-    /*display: inline-block;*/
     width: 100%;
   }
 }

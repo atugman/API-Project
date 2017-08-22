@@ -57,10 +57,6 @@ button.accordion.active, button.accordion:hover {
 
 div.panel {
     width: 25%;
-    padding: 10%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    margin: auto;
     background-color: white;
     display: none;
     opacity: .8;
@@ -74,7 +70,6 @@ div.panel {
 }
 
 ul {
-  width: 75%;
   text-align: center;
 }
 
@@ -84,6 +79,7 @@ ul, li{
 
 li {
   display: inline-block;
+  text-align: left;
 }
 
 body {
@@ -92,6 +88,14 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.highland {
+  font-size: 15px;
+}
+
+.sierra-nevada {
+  font-size: 16px;
 }
 
 .sn-bg {

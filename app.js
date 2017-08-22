@@ -149,84 +149,137 @@ $('.accordion-m').click(function() {
      $('.accordion-c').toggle();
 });
 
-//Sierra data from BreweryDB API
+//ajax
 
-$(".accordion-sn").click(function() {
+ $('.accordion-sn').on('click', function(event) {
 
- $.getJSON(`https://api.brewerydb.com/v2/search?q=sierra_nevada&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
-    displayData(response.data);
-  });
+   $.ajax({
+     type: 'GET',
+     url : "http://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/sierra+nevada&s=json/",
+     success: function(response) {
+       displayData(response[0]);
+       }
+     })
 
 function displayData(data) {
-    for(var i=0; i<data.length; i++) {
-      var html = '<li>' + data[i].name + '</li>';
-      $('.sierra-nevada').append(html);
-    }
-  }
+  var name = '<li>' + data.name + '</li>';
+  var street = '<li>' + data.street + '</li>';
+  var location = '<li>' + data.city + ', ' + data.state + ' ' + data.zip;
+  var phone = '<li>' + data.phone + '</li>';
+  var url = '<li>' + data.url + '</li>';
+
+  $('.sierra-nevada').append(name);
+  $('.sierra-nevada').append(street);
+  $('.sierra-nevada').append(location)
+  $('.sierra-nevada').append(phone)
+  $('.sierra-nevada').append(url)
+}
 });
 
 
-//AB data from BreweryDB API
+//AB data
 
- $(".accordion-ab").click(function() {
+$('.accordion-ab').on('click', function(event) {
 
- $.getJSON(`https://api.brewerydb.com/v2/search?q=anheuser-busch&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
-    displayData(response.data);
-  });
+ $.ajax({
+   type: 'GET',
+   url : "http://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/anheuser_busch&s=json/",
+   success: function(response) {
+     displayData(response[0]);
+     }
+   })
 
 function displayData(data) {
-    for(var i=0; i<data.length; i++) {
-      var html = '<li>' + data[i].name + '</li>';
-      $('.busch').append(html);
-    }
-  }
+  var name = '<li>' + data.name + '</li>';
+  var street = '<li>' + data.street + '</li>';
+  var location = '<li>' + data.city + ', ' + data.state + ' ' + data.zip;
+  var phone = '<li>' + data.phone + '</li>';
+
+  $('.busch').append(name);
+  $('.busch').append(street);
+  $('.busch').append(location)
+  $('.busch').append(phone)
+}
 });
 
-//Highland data from BreweryDB API
+//Highland data
 
  $(".accordion-hl").click(function() {
 
- $.getJSON(`https://api.brewerydb.com/v2/search?q=highland&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
-    displayData(response.data);
-  });
+   $.ajax({
+     type: 'GET',
+     url : "http://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/highland&s=json/",
+     success: function(response) {
+       displayData(response[4]);
+       }
+     })
 
 function displayData(data) {
-    for(var i=0; i<data.length; i++) {
-      var html = '<li>' + data[i].name + '</li>';
-      $('.highland').append(html);
-    }
-  }
+  var name = '<li>' + data.name + '</li>';
+  var street = '<li>' + data.street + '</li>';
+  var location = '<li>' + data.city + ', ' + data.state + ' ' + data.zip;
+  var phone = '<li>' + data.phone + '</li>';
+  var url = '<li>' + data.url + '</li>';
+
+  $('.highland').append(name);
+  $('.highland').append(street);
+  $('.highland').append(location)
+  $('.highland').append(phone)
+  $('.highland').append(url)
+}
 });
 
-//Coors data from BreweryDB API
+//Coors data
 
  $(".accordion-c").click(function() {
 
- $.getJSON(`https://api.brewerydb.com/v2/search?q=coors&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
-    displayData(response.data);
-  });
+   $.ajax({
+     type: 'GET',
+     url : "http://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/coors&s=json/",
+     success: function(response) {
+       displayData(response[0]);
+       }
+     })
 
 function displayData(data) {
-    for(var i=0; i<data.length; i++) {
-      var html = '<li>' + data[i].name + '</li>';
-      $('.coors').append(html);
-    }
-  }
+  var name = '<li>' + data.name + '</li>';
+  var street = '<li>' + data.street + '</li>';
+  var location = '<li>' + data.city + ', ' + data.state + ' ' + data.zip;
+  var phone = '<li>' + data.phone + '</li>';
+  var url = '<li>' + data.url + '</li>';
+
+  $('.coors').append(name);
+  $('.coors').append(street);
+  $('.coors').append(location)
+  $('.coors').append(phone)
+  $('.coors').append(url)
+}
 });
 
-
-//Miller data from BreweryDB API
+//Miller data
 
  $(".accordion-m").click(function() {
 
- $.getJSON(`https://api.brewerydb.com/v2/search?q=miller&type=beer&key=09bfd52cedee078843cbf5e41584a046`, function( response ) {
-    displayData(response.data);
-  });
+   $.ajax({
+     type: 'GET',
+     url : "http://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/miller&s=json/",
+     success: function(response) {
+       displayData(response[0]);
+      console.log(response[0]);
+       }
+     })
 
 function displayData(data) {
-    for(var i=0; i<data.length; i++) {
-      var html = '<li>' + data[i].name + '</li>';
-      $('.miller').append(html);
-    }
+  var name = '<li>' + data.name + '</li>';
+  var street = '<li>' + data.street + '</li>';
+  var location = '<li>' + data.city + ', ' + data.state + ' ' + data.zip;
+  var phone = '<li>' + data.phone + '</li>';
+  var url = '<li>' + data.url + '</li>';
+
+  $('.miller').append(name);
+  $('.miller').append(street);
+  $('.miller').append(location)
+  $('.miller').append(phone)
+  $('.miller').append(url)
   }
 });

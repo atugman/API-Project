@@ -155,7 +155,7 @@ $('.accordion-m').click(function() {
 
    $.ajax({
      type: 'GET',
-     url : "http://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/sierra+nevada&s=json/",
+     url : "https://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/sierra+nevada&s=json/",
      success: function(response) {
        displayData(response[0]);
        }
@@ -183,7 +183,7 @@ $('.accordion-ab').on('click', function(event) {
 
  $.ajax({
    type: 'GET',
-   url : "http://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/anheuser_busch&s=json/",
+   url : "https://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/anheuser_busch&s=json/",
    success: function(response) {
      displayData(response[0]);
      }
@@ -208,7 +208,7 @@ function displayData(data) {
 
    $.ajax({
      type: 'GET',
-     url : "http://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/highland&s=json/",
+     url : "https://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/highland&s=json/",
      success: function(response) {
        displayData(response[4]);
        }
@@ -235,7 +235,7 @@ function displayData(data) {
 
    $.ajax({
      type: 'GET',
-     url : "http://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/coors&s=json/",
+     url : "https://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/coors&s=json/",
      success: function(response) {
        displayData(response[0]);
        }
@@ -262,7 +262,7 @@ function displayData(data) {
 
    $.ajax({
      type: 'GET',
-     url : "http://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/miller&s=json/",
+     url : "https://beermapping.com/webservice/locquery/5286bcef453a6951aca9375274f9029d/miller&s=json/",
      success: function(response) {
        displayData(response[0]);
       console.log(response[0]);
